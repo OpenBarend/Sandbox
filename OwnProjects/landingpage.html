@@ -41,24 +41,25 @@
       /></a>
       <!-- Replace Lorem with short paragraph with short description -->
       <form>
-        <label for="#" action="/send-structured-email">
-          <input type="checkbox" name="topic-hulpvraag" /> Comité bijzondere
-          jeugdzorg </label
+        <label for="Comité" action="/send-structured-email">
+          <input type="checkbox" name="topic-hulpvraag" id="Comité" /> Comité
+          bijzondere jeugdzorg </label
         ><br />
-        <label for="#" action="/send-structured-email">
-          <input type="checkbox" name="topic-hulpvraag" /> Complex Post
-          Traumatisch Stress Syndroom </label
+        <label for="CPTSS" action="/send-structured-email">
+          <input type="checkbox" name="topic-hulpvraag" id="CPTSS" /> Complex
+          Post Traumatisch Stress Syndroom </label
         ><br />
-        <label for="#" action="/send-structured-email">
+        <label for="Psychoses" action="/send-structured-email" id="Psychoses">
           <input type="checkbox" name="topic-hulpvraag" /> Psychoses en
           waanbeelden </label
         ><br />
-        <label for="#" action="/send-structured-email">
-          <input type="checkbox" name="topic-hulpvraag" />
+        <label for="Verslavingszorg" action="/send-structured-email">
+          <input type="checkbox" name="topic-hulpvraag" id="Verslavingszorg" />
           Verslavingszorg </label
         ><br />
-        <label for="#" action="/send-structured-email">
-          <input type="checkbox" name="topic-hulpvraag" /> Budgetbeheer </label
+        <label for="Budgetbeheer" action="/send-structured-email">
+          <input type="checkbox" name="topic-hulpvraag" id="Budgetbeheer" />
+          Budgetbeheer </label
         ><br />
         <input type="text" placeholder="E-mail adres" required /><br />
         <button type="submit">Get connected today!</button>
@@ -68,17 +69,37 @@
       <a href="https:www.openbarend.com" target="_blank"
         ><img src="assets/OpvangEndNetLogo.png" alt="The Opvangend net logo"
       /></a>
-      <!-- Replace Lorem with short paragraph with short description -->
-      <form action="/submit-email-adres">
-        <label> <input type="radio" name="join-start" /> Join event 1h.</label
+      <form action="/chose-between-1H-1D-1W">
+        <label for="1h" action="/select-1h-event-email-placeholder">
+          <input type="radio" name="join-start" id="1h" /> Join event 1h. </label
         ><br />
-        <label>
-          <input type="radio" name="join-start" /> Join event 1/2 Day.</label
+        <label for="1D" action="/select-1D-event-email-placeholder">
+          <input type="radio" name="join-start" id="1D" /> Join event 1/2 Day. </label
         ><br />
-        <label> <input type="radio" name="join-start" /> Join event 1 WE.</label
+        <label for="1W" action="/select-1W-event-email-placeholder">
+          <input type="radio" name="join-start" id="1W" /> Join event 1 WE. </label
         ><br />
         <input type="text" placeholder="E-mail adres" required /><br />
         <button type="submit">Plan your event!</button>
+      </form>
+      <br />
+      <form action="/chose-between-Networking-Coaching-Lezingen">
+        <label
+          for="Networking"
+          action="/select-Networking-event-email-placeholder"
+        >
+          <input type="radio" name="join-start" id="Networking" /> Join event
+          Networking </label
+        ><br />
+        <label for="Coaching" action="/select-Coaching-event-email-placeholder">
+          <input type="radio" name="join-start" id="Coaching" /> Join Coaching </label
+        ><br />
+        <label for="Lezingen" action="/select-Lezingen-event-email-placeholder">
+          <input type="radio" name="join-start" id="Lezingen" /> Join Lezingen
+          event</label
+        ><br />
+        <input type="text" placeholder="E-mail adres" required /><br />
+        <button type="submit">Come join the fun!</button>
       </form>
     </main>
   </body>
